@@ -1,10 +1,10 @@
-# Hope for Gaza Foundation
+# Caring Hearts Foundation
 
-Charity donation website for Hope for Gaza Foundation — humanitarian aid and relief for Gaza and Sudan.
+Charity donation website for Caring Hearts Foundation — humanitarian aid and relief for world hunger and global poverty.
 
 ## Tech Stack
 
-- **Next.js 16** (App Router, React 19)
+- **Next.js 15** (App Router, React 19)
 - **Tailwind CSS v4**
 - **TypeScript**
 - **Stripe** (Checkout Sessions + Payment Links)
