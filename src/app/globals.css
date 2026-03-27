@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+/* === FONT FACES === */
+
+/* Roboto (headings) */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto_n6.woff2') format('woff2'), url('/fonts/roboto_n6.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto_n7.woff2') format('woff2'), url('/fonts/roboto_n7.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto_n9.woff2') format('woff2'), url('/fonts/roboto_n9.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Host Grotesk (body) */
+@font-face {
+  font-family: 'Host Grotesk';
+  src: url('/fonts/hostgrotesk_n4.woff2') format('woff2'), url('/fonts/hostgrotesk_n4.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Host Grotesk';
+  src: url('/fonts/hostgrotesk_n7.woff2') format('woff2'), url('/fonts/hostgrotesk_n7.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Host Grotesk';
+  src: url('/fonts/hostgrotesk_i4.woff2') format('woff2'), url('/fonts/hostgrotesk_i4.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Host Grotesk';
+  src: url('/fonts/hostgrotesk_i7.woff2') format('woff2'), url('/fonts/hostgrotesk_i7.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* === TAILWIND THEME === */
+@theme {
+  --color-brand: #A92733;
+  --color-brand-hover: #222222;
+  --color-footer-start: #F9E9EC;
+  --color-footer-end: #FDF6F6;
+  --color-section-green: #EDF1ED;
+  --color-section-mint: #DFF8EF;
+  --color-border: #EEEEEE;
+  --color-badge-new: #49A594;
+  --color-badge-sale: #DA3F3F;
+  --color-card-shadow: #DBDBDB;
+  --color-gray-bg: #F5F5F5;
+
+  --font-heading: 'Roboto', sans-serif;
+  --font-body: 'Host Grotesk', sans-serif;
+}
+
+/* === BASE STYLES === */
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.75;
+  color: #000;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 29px; }
+h3 { font-size: 25px; }
+h4 { font-size: 19px; }
+h5 { font-size: 16px; }
+
+@media (min-width: 768px) {
+  h1 { font-size: 48px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 30px; }
+  h4 { font-size: 22px; }
+  h5 { font-size: 17px; }
+}
+
+@media (min-width: 1024px) {
+  h1 { font-size: 60px; }
+  h2 { font-size: 42px; }
+  h3 { font-size: 36px; }
+  h4 { font-size: 24px; }
+  h5 { font-size: 18px; }
+}
+
+/* === ANIMATIONS === */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Card shadow exact match */
+.card-shadow {
+  box-shadow: 0 0 20px #dbdbdb;
+}
+
+/* Button hover shadow */
+.btn-hover-shadow:hover {
+  box-shadow: 0 0 0 0.2rem rgba(169, 39, 51, 0.25);
+}
