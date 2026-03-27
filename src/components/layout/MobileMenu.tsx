@@ -41,7 +41,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
         <div className="flex items-center justify-between border-b border-border p-4">
           <Image
             src="/img/logo.png"
-            alt="Hope for Gaza Foundation"
+            alt="Caring Hearts"
             width={110}
             height={55}
             className="h-auto w-[110px]"

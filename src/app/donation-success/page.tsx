@@ -14,8 +14,8 @@ export default function DonationSuccess() {
           <h1 className="mb-4">Thank You!</h1>
           <p className="mb-8 text-lg text-gray-600">
             Your donation has been received. Your generosity helps provide
-            essential relief to families in Gaza. Together, we are making a
-            difference.
+            essential relief to families in need. Together, we are making a
+            difference in the fight against world hunger.
           </p>
           <Link
             href="/"

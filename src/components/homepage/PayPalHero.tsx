@@ -20,9 +20,9 @@ export default function PayPalHero() {
               Your Kindness Can Save a Family Today
             </h2>
             <p className="mb-6 max-w-md text-base text-white/90 md:text-lg">
-              Families in Gaza are facing hunger, displacement, and urgent
-              medical needs. Your donation delivers food, clean water, and
-              life-saving support, right now.
+              Families across the world are facing hunger, displacement, and
+              urgent medical needs. Your donation delivers food, clean water,
+              and life-saving support, right now.
             </p>
             <Button
               href={getPayPalUrl(paypalButtons.general)}

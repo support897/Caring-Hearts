@@ -36,11 +36,11 @@ export default function DonationWidget({ campaign = 'stripe1' }: DonationWidgetP
               className="mb-4 h-auto w-[120px]"
             />
             <h2 className="mb-4 text-center">
-              Emergency Relief &amp; Humanitarian Aid for Gaza
+              Emergency Relief &amp; Humanitarian Aid for the World
             </h2>
             <p className="text-center text-sm leading-relaxed text-gray-700">
               Your donation helps deliver clean water, hot meals, shelter, medical
-              care, and education support to families in Gaza. Every contribution
+              care, and education support to families facing hunger. Every contribution
               provides urgent relief to people facing severe humanitarian hardship.
             </p>
           </div>

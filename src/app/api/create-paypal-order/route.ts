@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
 
     const order = await createPayPalOrder(
       value,
-      'Donation to Hope for Gaza Foundation'
+      'Donation to Caring Hearts'
     )
 
     return NextResponse.json({ id: order.id })

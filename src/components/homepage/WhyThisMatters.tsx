@@ -18,9 +18,9 @@ export default function WhyThisMatters() {
               Why This Matters
             </p>
             <p className="mb-4 text-sm leading-relaxed text-gray-700">
-              In Gaza, parents wake up each day unsure how they will feed their
-              children. Homes have been lost. Access to clean water is limited.
-              Hospitals are overwhelmed.
+              Across the world, parents wake up each day unsure how they will
+              feed their children. Homes have been lost. Access to clean water is
+              limited. Healthcare systems are overwhelmed.
             </p>
             <p className="mb-6 text-sm leading-relaxed text-gray-700">
               But even in the darkest moments, compassion travels across

@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
       price_data: {
         currency: 'usd',
         product_data: {
-          name: 'Donation to Hope for Gaza Foundation',
+          name: 'Donation to Caring Hearts',
           description: isRecurring
             ? `${frequency.charAt(0).toUpperCase() + frequency.slice(1)} donation`
             : 'One-time donation',
