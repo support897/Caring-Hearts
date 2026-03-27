@@ -7,8 +7,11 @@ export async function getPayPalAccessToken(): Promise<string> {
     return cachedToken.token
   }
 
-  const clientId = process.env.PAYPAL_CLIENT_ID!
-  const secret = process.env.PAYPAL_CLIENT_SECRET!
+  const clientId = process.env.PAYPAL_CLIENT_ID
+  const secret = process.env.PAYPAL_CLIENT_SECRET
+  if (!clientId || !secret) {
+    throw new Error('PAYPAL_CLIENT_ID or PAYPAL_CLIENT_SECRET is not set')
+  }
   const auth = Buffer.from(`${clientId}:${secret}`).toString('base64')
 
   const res = await fetch(`${PAYPAL_API_BASE}/v1/oauth2/token`, {
@@ -55,7 +58,7 @@ export async function createPayPalOrder(amount: number, description: string) {
         },
       ],
       application_context: {
-        brand_name: 'Hope for Gaza Foundation',
+        brand_name: 'Caring Hearts',
         shipping_preference: 'NO_SHIPPING',
         user_action: 'PAY_NOW',
       },

@@ -49,8 +49,8 @@ export const blogPosts: BlogPost[] = [
       'Every contribution you make helps transform pain into possibility.',
     content:
       "Every contribution you make helps transform pain into possibility. Through your generosity, families around the world receive food, medical aid, and safe shelter. Each dollar gives comfort to a child, relief to a parent, and hope to a community in crisis. At Caring Hearts, we believe that compassion knows no borders. Your kindness fuels our mission to restore dignity and rebuild lives for those who have lost so much. Together, we are proving that even the smallest act of giving can create a lasting impact and keep hope alive across our world.",
-    image: '/img/gaza/mass-aid.webp',
-    imageWidth: 1194,
-    imageHeight: 835,
+    image: '/img/caring/img5.jpg',
+    imageWidth: 1600,
+    imageHeight: 1200,
   },
 ]

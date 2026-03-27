@@ -4,7 +4,7 @@ export interface Testimonial {
   location: string
 }
 
-export const gazaTestimonials: Testimonial[] = [
+export const generalTestimonials: Testimonial[] = [
   {
     text: 'I wanted to make a real difference, and this campaign made it simple. Knowing my small donation helped feed a family means everything.',
     name: 'Sarah M.',

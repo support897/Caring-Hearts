@@ -1,6 +1,14 @@
 import Stripe from 'stripe'
 
-const key = process.env.STRIPE_SECRET_KEY
-if (!key) throw new Error('STRIPE_SECRET_KEY is not set — check .env.local')
+let stripeInstance: Stripe | null = null
 
-export const stripe = new Stripe(key)
+export const getStripe = () => {
+  if (!stripeInstance) {
+    const key = process.env.STRIPE_SECRET_KEY
+    if (!key) throw new Error('STRIPE_SECRET_KEY is not set')
+    stripeInstance = new Stripe(key)
+  }
+  return stripeInstance
+}
+
+export const stripe = process.env.STRIPE_SECRET_KEY ? new Stripe(process.env.STRIPE_SECRET_KEY) : (null as unknown as Stripe)
