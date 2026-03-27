@@ -45,6 +45,8 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
             width={110}
             height={55}
             className="h-auto w-[110px]"
+            priority
+            quality={100}
           />
           <button onClick={onClose} aria-label="Close menu">
             <svg

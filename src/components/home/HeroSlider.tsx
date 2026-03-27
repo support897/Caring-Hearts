@@ -23,6 +23,7 @@ export default function HeroSlider({ variant = 'gaza' }: HeroSliderProps) {
           fill
           className="hidden object-cover md:block"
           priority
+          quality={100}
         />
         {/* Mobile image */}
         <Image
@@ -31,6 +32,7 @@ export default function HeroSlider({ variant = 'gaza' }: HeroSliderProps) {
           fill
           className="object-cover md:hidden"
           priority
+          quality={100}
         />
 
         {/* Overlay */}

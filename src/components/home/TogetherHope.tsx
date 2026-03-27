@@ -22,6 +22,7 @@ export default function TogetherHope({ variant = 'gaza' }: TogetherHopeProps) {
               alt="Together We Bring Hope"
               fill
               className="object-cover"
+              quality={100}
             />
           </div>
           <div>
@@ -62,6 +63,7 @@ export default function TogetherHope({ variant = 'gaza' }: TogetherHopeProps) {
               alt={`${region} project video`}
               fill
               className="object-cover"
+              quality={100}
             />
             {/* Play icon overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
@@ -71,6 +73,7 @@ export default function TogetherHope({ variant = 'gaza' }: TogetherHopeProps) {
                   alt="Play video"
                   fill
                   className="object-cover opacity-60 transition-opacity hover:opacity-100"
+                  quality={100}
                 />
                 <svg
                   width="20"

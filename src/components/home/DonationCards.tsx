@@ -33,6 +33,7 @@ export default function DonationCards({ variant = 'gaza' }: DonationCardsProps) 
                   alt={service.name}
                   fill
                   className="object-cover"
+                  quality={100}
                 />
               </div>
               <h3 className="mb-2 text-xl md:text-2xl">
