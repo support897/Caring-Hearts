@@ -37,13 +37,13 @@ export const donationServices: DonationService[] = [
   {
     name: 'Education Assistance Service',
     price: 75,
-    image: '/img/education.png',
-    imageWebp: '/img/education.webp',
+    image: '/img/medical.png',
+    imageWebp: '/img/medical.webp',
     description:
       'Provide educational materials, stationery, and support to children whose schooling has been disrupted by poverty or hardship. Helps children continue their education and regain a sense of normalcy.',
     sudanDescription:
       'Provide educational materials, stationery, and support to children in Africa whose schooling has been disrupted by poverty or drought. Helps children continue their education and regain a sense of normalcy.',
-    sudanImage: '/img/sudan/download_061519.png',
+    sudanImage: '/img/sudan/download_061814.png',
     stripeCampaign: 'stripe3',
   },
   {
@@ -61,13 +61,13 @@ export const donationServices: DonationService[] = [
   {
     name: 'Medical Support Service',
     price: 150,
-    image: '/img/medical.png',
-    imageWebp: '/img/medical.webp',
+    image: '/img/education.png',
+    imageWebp: '/img/education.webp',
     description:
       'Assist with the supply of essential medicines and medical kits for families and children in regions affected by malnutrition and poverty. Helps fund the procurement and delivery of life saving medical supplies.',
     sudanDescription:
       'Assist with the supply of essential medicines and medical kits for families and children in emergency areas across Africa. Helps fund the procurement and delivery of life-saving medical supplies.',
-    sudanImage: '/img/sudan/download_061814.png',
+    sudanImage: '/img/sudan/download_061519.png',
     stripeCampaign: 'stripe1',
   },
   {
