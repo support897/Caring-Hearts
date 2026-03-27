@@ -65,14 +65,22 @@ export default function TogetherHope({ variant = 'gaza' }: TogetherHopeProps) {
             />
             {/* Play icon overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/80 shadow-lg">
+              <div className="relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-full bg-white/80 shadow-lg">
                 <Image
-            src="/img/caring/img3.jpg"
-            alt="Woman interacting with children"
-            width={800}
-            height={600}
-            className="rounded-2xl shadow-2xl"
-          />
+                  src="/img/caring/img3.jpg"
+                  alt="Play video"
+                  fill
+                  className="object-cover opacity-60 transition-opacity hover:opacity-100"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="#A92733"
+                  className="relative z-10"
+                >
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
               </div>
             </div>
           </div>

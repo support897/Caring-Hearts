@@ -155,18 +155,18 @@ export default function DonationPopup() {
           <div className="p-5 md:p-6">
             <Image
               src="/img/logo.png"
-              alt="Hope for Gaza Foundation"
+              alt="Caring Hearts"
               width={90}
               height={45}
               className="mb-3 h-auto w-[90px]"
             />
             <h3 className="mb-2 text-lg font-bold leading-snug md:text-xl">
-              Emergency Relief &amp; Humanitarian Support for Gaza
+              Emergency Relief &amp; Humanitarian Support for Communities in Need
             </h3>
             <p className="mb-4 text-sm leading-relaxed text-gray-600">
               Your support helps provide clean water, meals, shelter, medical
               aid, education support, and full relief packages to families in
-              Gaza. Every contribution delivers urgent help to people facing
+              crisis. Every contribution delivers urgent help to people facing
               extreme hardship.
             </p>
             <p className="mb-2 text-sm font-bold">Package Names:</p>

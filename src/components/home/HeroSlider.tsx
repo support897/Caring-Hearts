@@ -18,16 +18,16 @@ export default function HeroSlider({ variant = 'gaza' }: HeroSliderProps) {
       <div className="relative h-[420px] md:h-[560px] lg:h-[720px]">
         {/* Desktop image */}
         <Image
-          src={isGaza ? '/img/gaza/hero.webp' : '/img/sudan/hero.png'}
-          alt="slider image"
+          src={isGaza ? '/img/caring/img1.jpg' : '/img/caring/img4.jpg'}
+          alt="Caring Hearts Hero"
           fill
           className="hidden object-cover md:block"
           priority
         />
         {/* Mobile image */}
         <Image
-          src={isGaza ? '/img/gaza/hero-mobile.webp' : '/img/sudan/wa_5.40.49_2.jpg'}
-          alt="slider image"
+          src={isGaza ? '/img/caring/img2.jpg' : '/img/caring/img3.jpg'}
+          alt="Caring Hearts Hero Mobile"
           fill
           className="object-cover md:hidden"
           priority
