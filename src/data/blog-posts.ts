@@ -27,9 +27,9 @@ export const blogPosts: BlogPost[] = [
       'Even in hardship, children find ways to smile and dream. Their courage is the heartbeat of our mission.',
     content:
       "In the hungriest corners of the world, even in hardship, children find ways to smile and dream. Their courage is the heartbeat of our mission. With your support, Caring Hearts provides education, food, and safety, giving every child a chance at a brighter future. These young hearts remind us that resilience lives in the smallest souls. Through this story, we honor their strength and show how your compassion helps them reclaim their childhood and believe in tomorrow once again.",
-    image: '/img/child-portrait.webp',
-    imageWidth: 1400,
-    imageHeight: 933,
+    image: '/img/caring/children-dist-aid.jpg',
+    imageWidth: 1600,
+    imageHeight: 1067,
   },
   {
     slug: 'delivering-meals-delivering-life',

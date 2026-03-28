@@ -6,16 +6,16 @@ import Newsletter from '@/components/home/Newsletter'
 import RecentProjects from '@/components/home/RecentProjects'
 import Testimonials from '@/components/home/Testimonials'
 
-export default function AfricaDonationPage() {
+export default function WorldHungerDonationPage() {
   return (
     <>
-      <HeroSlider variant="sudan" />
-      <DonationCards variant="sudan" />
+      <HeroSlider variant="world-hunger" />
+      <DonationCards variant="world-hunger" />
       <DonationWidget campaign="stripe1" />
-      <TogetherHope variant="sudan" />
+      <TogetherHope variant="world-hunger" />
       <Newsletter />
-      <RecentProjects variant="sudan" />
-      <Testimonials variant="sudan" />
+      <RecentProjects variant="world-hunger" />
+      <Testimonials variant="world-hunger" />
     </>
   )
 }

@@ -3,14 +3,14 @@
 import { useState, useEffect } from 'react'
 import Container from '@/components/ui/Container'
 import AnimateOnScroll from '@/components/ui/AnimateOnScroll'
-import { generalTestimonials, sudanTestimonials } from '@/data/testimonials'
+import { generalTestimonials, worldHungerTestimonials } from '@/data/testimonials'
 
 interface TestimonialsProps {
-  variant?: 'gaza' | 'sudan'
+  variant?: 'gaza' | 'world-hunger'
 }
 
 export default function Testimonials({ variant = 'gaza' }: TestimonialsProps) {
-  const testimonials = variant === 'gaza' ? generalTestimonials : sudanTestimonials
+  const testimonials = variant === 'gaza' ? generalTestimonials : worldHungerTestimonials
   const [current, setCurrent] = useState(0)
 
   useEffect(() => {

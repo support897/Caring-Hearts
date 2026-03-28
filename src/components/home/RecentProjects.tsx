@@ -9,11 +9,11 @@ const gazaImages = [
   '/img/water-distribution.webp',
   '/img/children-receiving.webp',
   '/img/volunteer.webp',
-  '/img/child-portrait.webp',
+  '/img/caring/children-dist-aid.jpg',
   '/img/gaza/download_37.png',
 ]
 
-const sudanImages = [
+const worldHungerImages = [
   '/img/sudan/wa_5.40.30_1.jpg',
   '/img/sudan/wa_5.40.30.jpg',
   '/img/sudan/wa_5.40.34_1.jpg',
@@ -25,11 +25,11 @@ const sudanImages = [
 ]
 
 interface RecentProjectsProps {
-  variant?: 'gaza' | 'sudan'
+  variant?: 'gaza' | 'world-hunger'
 }
 
 export default function RecentProjects({ variant = 'gaza' }: RecentProjectsProps) {
-  const images = variant === 'gaza' ? gazaImages : sudanImages
+  const images = variant === 'gaza' ? gazaImages : worldHungerImages
 
   return (
     <section className="py-12 md:py-16">

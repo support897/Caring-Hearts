@@ -7,7 +7,7 @@ import Link from 'next/link'
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'Donate', href: '/donate-now' },
-  { label: 'Africa Donation', href: '/africa-donation' },
+  { label: 'World Hunger Donation', href: '/world-hunger-donation' },
   { label: 'About Us', href: '/about-us' },
   { label: 'Contact Us', href: '/contact' },
 ]

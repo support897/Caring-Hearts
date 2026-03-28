@@ -2,6 +2,7 @@ import HeroSlider from '@/components/home/HeroSlider'
 import FundraisingProgress from '@/components/home/FundraisingProgress'
 import DonationCards from '@/components/home/DonationCards'
 import DonationWidget from '@/components/home/DonationWidget'
+import GlobalHungerSummary from '@/components/home/GlobalHungerSummary'
 import TogetherHope from '@/components/home/TogetherHope'
 import Newsletter from '@/components/home/Newsletter'
 import FAQ from '@/components/home/FAQ'
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <HeroSlider variant="gaza" />
       <FundraisingProgress />
+      <GlobalHungerSummary />
       <DonationCards variant="gaza" />
       <DonationWidget campaign="stripe1" />
       <TogetherHope variant="gaza" />

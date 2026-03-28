@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button'
 import { useDonationPopup } from '@/components/donation/DonationPopupContext'
 
 interface HeroSliderProps {
-  variant?: 'gaza' | 'sudan'
+  variant?: 'gaza' | 'world-hunger'
 }
 
 export default function HeroSlider({ variant = 'gaza' }: HeroSliderProps) {
@@ -50,7 +50,7 @@ export default function HeroSlider({ variant = 'gaza' }: HeroSliderProps) {
                 isGaza ? 'text-white' : 'text-white'
               } ${!isGaza ? 'ml-auto' : ''}`}
             >
-              {isGaza ? 'Feed the World' : 'Stand With Africa'}
+              {isGaza ? 'Feed the World' : 'End World Hunger'}
               <br />
               Your Support Can
               <br />

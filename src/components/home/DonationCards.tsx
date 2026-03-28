@@ -8,11 +8,11 @@ import { donationServices } from '@/data/donation-services'
 import { useDonationPopup } from '@/components/donation/DonationPopupContext'
 
 interface DonationCardsProps {
-  variant?: 'gaza' | 'sudan'
+  variant?: 'gaza' | 'world-hunger'
 }
 
 export default function DonationCards({ variant = 'gaza' }: DonationCardsProps) {
-  const isSudan = variant === 'sudan'
+  const isWorldHunger = variant === 'world-hunger'
   const { open: openDonation } = useDonationPopup()
 
   return (
@@ -29,7 +29,7 @@ export default function DonationCards({ variant = 'gaza' }: DonationCardsProps) 
             >
               <div className="relative mb-6 h-48 w-full overflow-hidden rounded-lg">
                 <Image
-                  src={isSudan ? service.sudanImage : service.imageWebp}
+                  src={isWorldHunger ? service.worldHungerImage : service.imageWebp}
                   alt={service.name}
                   fill
                   className="object-cover"
@@ -40,7 +40,7 @@ export default function DonationCards({ variant = 'gaza' }: DonationCardsProps) 
                 {service.name} &mdash; ${service.price}
               </h3>
               <p className="mb-6 flex-1 text-sm leading-relaxed text-gray-600">
-                {isSudan ? service.sudanDescription : service.description}
+                {isWorldHunger ? service.worldHungerDescription : service.description}
               </p>
               <Button
                 onClick={() => openDonation(service.stripeCampaign, service.price.toString())}

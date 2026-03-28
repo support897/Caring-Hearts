@@ -3,12 +3,12 @@ import Container from '@/components/ui/Container'
 import AnimateOnScroll from '@/components/ui/AnimateOnScroll'
 
 interface TogetherHopeProps {
-  variant?: 'gaza' | 'sudan'
+  variant?: 'gaza' | 'world-hunger'
 }
 
 export default function TogetherHope({ variant = 'gaza' }: TogetherHopeProps) {
   const isGaza = variant === 'gaza'
-  const region = isGaza ? 'Gaza' : 'Sudan'
+  const region = isGaza ? 'Gaza' : 'World Hunger'
 
   return (
     <section className="py-12 md:py-16">
@@ -30,7 +30,7 @@ export default function TogetherHope({ variant = 'gaza' }: TogetherHopeProps) {
             <p className="mb-4 text-gray-700">
               {isGaza
                 ? 'Many have lost everything to hunger and poverty, but your support can bring relief and hope. Each donation helps provide meals, clean water, medicine, and shelter for those who need it most.'
-                : 'Many families across Africa have lost their homes and loved ones to hunger and hardship, but your support can bring relief and hope. Each donation helps provide meals, clean water, medicine, and shelter for those who need it most.'}
+                : 'Many families in vulnerable regions have lost their homes and loved ones to hunger and hardship, but your support can bring relief and hope. Each donation helps provide meals, clean water, medicine, and shelter for those who need it most.'}
             </p>
             <p className="text-gray-700">
               Together, we can bring comfort and strength to families fighting to
@@ -45,12 +45,12 @@ export default function TogetherHope({ variant = 'gaza' }: TogetherHopeProps) {
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div>
             <h3 className="mb-4">
-              {isGaza ? 'Together, We Can End Hunger Around the World' : 'Together, We Can Bring Hope to Africa'}
+              {isGaza ? 'Together, We Can End Hunger Around the World' : 'Together, We Can End World Hunger'}
             </h3>
             <p className="mb-4 text-gray-700">
               {isGaza
                 ? 'Every day, families around the world struggle to find food, clean water, and shelter. Your support helps deliver urgent relief. Meals for the hungry, medicine for the sick, and hope for those who have lost everything.'
-                : 'Every day, families across Africa struggle to find food, clean water, and shelter. Your support helps deliver urgent relief. Meals for the hungry, medicine for the sick, and hope for those who have lost everything.'}
+                : 'Every day, families in hunger-stricken regions struggle to find food, clean water, and shelter. Your support helps deliver urgent relief. Meals for the hungry, medicine for the sick, and hope for those who have lost everything.'}
             </p>
             <p className="text-gray-700">
               Each donation, no matter the size, changes lives and reminds them

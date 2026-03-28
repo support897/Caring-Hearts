@@ -7,11 +7,8 @@ export async function getPayPalAccessToken(): Promise<string> {
     return cachedToken.token
   }
 
-  const clientId = process.env.PAYPAL_CLIENT_ID
-  const secret = process.env.PAYPAL_CLIENT_SECRET
-  if (!clientId || !secret) {
-    throw new Error('PAYPAL_CLIENT_ID or PAYPAL_CLIENT_SECRET is not set')
-  }
+  const clientId = process.env.PAYPAL_CLIENT_ID!
+  const secret = process.env.PAYPAL_CLIENT_SECRET!
   const auth = Buffer.from(`${clientId}:${secret}`).toString('base64')
 
   const res = await fetch(`${PAYPAL_API_BASE}/v1/oauth2/token`, {
