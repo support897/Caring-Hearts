@@ -59,7 +59,7 @@ export default function TogetherHope({ variant = 'gaza' }: TogetherHopeProps) {
           </div>
           <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-black">
             <Image
-              src={isGaza ? '/video/gaza-poster.jpg' : '/video/sudan-poster.jpg'}
+              src={isGaza ? '/img/caring/water-well.jpg' : '/video/sudan-poster.jpg'}
               alt={`${region} project video`}
               fill
               className="object-cover"
