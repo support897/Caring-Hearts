@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import MobileStickyBar from "@/components/layout/MobileStickyBar";
 import { DonationPopupProvider } from "@/components/donation/DonationPopupContext";
 import DonationPopup from "@/components/donation/DonationPopup";
+import DonationNotification from "@/components/ui/DonationNotification";
 
 export const metadata: Metadata = {
   title: "Caring Hearts",
@@ -31,6 +32,7 @@ export default function RootLayout({
           <Footer />
           <MobileStickyBar />
           <DonationPopup />
+          <DonationNotification />
         </DonationPopupProvider>
       </body>
     </html>
