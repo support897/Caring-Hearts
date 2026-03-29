@@ -73,13 +73,13 @@ export const donationServices: DonationService[] = [
   {
     name: 'Emergency Relief Package',
     price: 200,
-    image: '/img/relief.png',
-    imageWebp: '/img/relief.webp',
+    image: '/img/caring/emergency-relief-box.png',
+    imageWebp: '/img/caring/emergency-relief-box.png',
     description:
       'Deliver comprehensive relief packages that include food, water, hygiene items, and emergency supplies for one family. Supports rapid response operations in hunger-affected and disaster stricken areas.',
     worldHungerDescription:
       'Deliver comprehensive relief packages that include food, water, hygiene items, and emergency supplies for one family in crisis-hit regions. Supports rapid response operations in famine-hit or disaster affected areas.',
-    worldHungerImage: '/img/sudan/wa_5.40.46_1.jpg',
+    worldHungerImage: '/img/caring/emergency-relief-box.png',
     stripeCampaign: 'stripe2',
   },
 ]
