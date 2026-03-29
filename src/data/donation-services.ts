@@ -43,7 +43,7 @@ export const donationServices: DonationService[] = [
       'Provide educational materials, stationery, and support to children whose schooling has been disrupted by poverty or hardship. Helps children continue their education and regain a sense of normalcy.',
     worldHungerDescription:
       'Provide educational materials, stationery, and support to children whose schooling has been disrupted by extreme poverty or environmental crises. Helps children continue their education and regain a sense of normalcy.',
-    worldHungerImage: '/img/sudan/download_061519.png',
+    worldHungerImage: '/img/sudan/download_061814.png',
     stripeCampaign: 'stripe3',
   },
   {
@@ -67,7 +67,7 @@ export const donationServices: DonationService[] = [
       'Assist with the supply of essential medicines and medical kits for families and children in regions affected by malnutrition and poverty. Helps fund the procurement and delivery of life saving medical supplies.',
     worldHungerDescription:
       'Assist with the supply of essential medicines and medical kits for families and children in emergency areas globally. Helps fund the procurement and delivery of life-saving medical supplies.',
-    worldHungerImage: '/img/sudan/download_061814.png',
+    worldHungerImage: '/img/sudan/download_061519.png',
     stripeCampaign: 'stripe1',
   },
   {
