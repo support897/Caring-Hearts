@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { stripe } from '@/lib/stripe'
+import { getStripe } from '@/lib/stripe'
 import type Stripe from 'stripe'
 
 const FREQUENCY_MAP: Record<string, Stripe.Price.Recurring.Interval | null> = {
@@ -38,6 +38,11 @@ export async function POST(req: NextRequest) {
         }),
       },
       quantity: 1,
+    }
+
+    const stripe = getStripe()
+    if (!stripe) {
+      return NextResponse.json({ error: 'Stripe is not configured' }, { status: 500 })
     }
 
     const session = await stripe.checkout.sessions.create({
