@@ -23,8 +23,7 @@ export default function GlobalHungerSummary() {
               <div className="mb-10">
                 <Button
                   href="/world-hunger-facts"
-                  variant="outline"
-                  size="large"
+variant="default"
                   className="border-2 font-bold tracking-wide transition-all hover:bg-gray-50"
                 >
                   WORLD HUNGER FACTS
